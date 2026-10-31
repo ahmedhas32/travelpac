@@ -1,0 +1,12 @@
+sources:
+  - name: travelpac
+    schema: raw
+    tables:
+      - name: travelpac
+        columns:
+        - name: ukos
+          data_tests:
+            - accepted_values:
+                arguments:
+                  values: ['UK residents', 'Overseas residents']
+      - name: travelpac_spain

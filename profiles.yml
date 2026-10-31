@@ -1,0 +1,7 @@
+travelpac:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: travelpac.duckdb
+      schema: main

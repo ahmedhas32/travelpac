@@ -1,0 +1,7 @@
+models:
+  - name: stg_model__first
+    description: Travelpac cleaned, one row per published cell
+    columns:
+      - name: year
+        data_tests:
+          - not_null
