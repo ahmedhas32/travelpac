@@ -1,6 +1,12 @@
 models:
   - name: stg_model__first
-    description: Travelpac cleaned, one row per published cell
+    description: Travelpac cleaned, one row per published cell including only overseas residentss
+    columns:
+      - name: year
+        data_tests:
+          - not_null
+  - name: stg_model__outbound
+    description: Travelpac cleaned, one row per published cell including only UK residents
     columns:
       - name: year
         data_tests:

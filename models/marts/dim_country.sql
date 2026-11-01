@@ -1,0 +1,1 @@
+select country , region from {{ref('country_regions')}}

@@ -1,0 +1,45 @@
+models : 
+- name : marts_inbound_by_country
+  description : Inbound by country year , and mode of transportation
+  columns : 
+    - name : year
+      description : Year of the inbound travel
+      data_tests : 
+        - not_null
+    - name : country
+      description : Country of origin for inbound travel
+      data_tests : 
+        - not_null
+    - name : mode
+      description : Mode of transportation used for inbound travel (e.g., air, sea, land)
+      data_tests : 
+        - not_null
+        - accepted_values : 
+            arguments : 
+              values : ['Air', 'Sea', 'Tunnel']
+- name : dim_country
+  description : Dimension table for countries with relevant attributes
+  columns : 
+    - name : country
+      description : Full name of the country
+      data_tests : 
+        - not_null 
+- name : marts_outbound_by_country
+  description : outbound travel by country, year, and mode of transportation
+  columns : 
+    - name : year
+      description : Year of the outbound travel
+      data_tests : 
+        - not_null
+    - name : country
+      description : Country of origin for outbound travel
+      data_tests : 
+        - not_null
+
+    - name : mode
+      description : Mode of transportation used for outbound travel (e.g., air, sea, land)
+      data_tests : 
+        - not_null
+        - accepted_values : 
+            arguments : 
+              values : ['Air', 'Sea', 'Tunnel']

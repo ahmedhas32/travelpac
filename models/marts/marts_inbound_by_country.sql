@@ -1,4 +1,3 @@
-select  year ,  mode , country , round(sum(visits) , 0)  as total_visits , round(sum(nights) , 0) as total_nights
+select  year ,  mode , country , round(sum(visits) , 0)  as total_visits , round(sum(nights) , 0) as total_nights , sum(expend) as total_expand
  from {{ref('stg_model__first')}}
-where ukos = 'Overseas residents'
  group by year ,  mode , country

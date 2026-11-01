@@ -1,0 +1,63 @@
+country,iso3,region,subregion,is_residual_group
+Austria,AUT,Europe,Western Europe,false
+Belgium,BEL,Europe,Western Europe,false
+Bulgaria,BGR,Europe,Central/Eastern Europe,false
+Croatia,HRV,Europe,Southern/Mediterranean Europe,false
+Czech Republic,CZE,Europe,Central/Eastern Europe,false
+Cyprus EU,CYP,Europe,Southern/Mediterranean Europe,false
+Cyprus Non EU,,Europe,Southern/Mediterranean Europe,false
+Denmark,DNK,Europe,Northern Europe,false
+Estonia,EST,Europe,Central/Eastern Europe,false
+Finland,FIN,Europe,Northern Europe,false
+France,FRA,Europe,Western Europe,false
+Germany,DEU,Europe,Western Europe,false
+Gibraltar,GIB,Europe,Southern/Mediterranean Europe,false
+Greece,GRC,Europe,Southern/Mediterranean Europe,false
+Hungary,HUN,Europe,Central/Eastern Europe,false
+Iceland,ISL,Europe,Northern Europe,false
+Irish Republic,IRL,Europe,Northern Europe,false
+Italy,ITA,Europe,Southern/Mediterranean Europe,false
+Latvia,LVA,Europe,Central/Eastern Europe,false
+Lithuania,LTU,Europe,Central/Eastern Europe,false
+Luxembourg,LUX,Europe,Western Europe,false
+Malta,MLT,Europe,Southern/Mediterranean Europe,false
+Netherlands,NLD,Europe,Western Europe,false
+Norway,NOR,Europe,Northern Europe,false
+Poland,POL,Europe,Central/Eastern Europe,false
+Portugal,PRT,Europe,Southern/Mediterranean Europe,false
+Romania,ROU,Europe,Central/Eastern Europe,false
+Russia,RUS,Europe,Central/Eastern Europe,false
+Spain,ESP,Europe,Southern/Mediterranean Europe,false
+Slovakia,SVK,Europe,Central/Eastern Europe,false
+Slovenia,SVN,Europe,Southern/Mediterranean Europe,false
+Sweden,SWE,Europe,Northern Europe,false
+Switzerland,CHE,Europe,Western Europe,false
+Turkey,TUR,Europe,Southern/Mediterranean Europe,false
+Channel Islands,,Europe,Northern Europe,false
+Other Europe,,Europe,Unspecified,true
+Egypt,EGY,Middle East,Middle East,false
+Tunisia,TUN,Africa,North Africa,false
+Other North Africa,,Africa,North Africa,true
+South Africa,ZAF,Africa,Subsaharan Africa,false
+Other Africa,,Africa,Subsaharan Africa,true
+Israel,ISR,Europe,Southern/Mediterranean Europe,false
+United Arab Emirates,ARE,Middle East,Middle East,false
+Other Middle East,,Middle East,Middle East,true
+China - Hong Kong,HKG,Asia and the Pacific,North-East Asia,false
+China - Other,CHN,Asia and the Pacific,North-East Asia,false
+India,IND,Asia and the Pacific,South Asia,false
+Japan,JPN,Asia and the Pacific,North-East Asia,false
+Pakistan,PAK,Asia and the Pacific,South Asia,false
+Sri Lanka,LKA,Asia and the Pacific,South Asia,false
+Thailand,THA,Asia and the Pacific,South-East Asia,false
+Other Asia,,Asia and the Pacific,Unspecified,true
+Canada,CAN,Americas,North America,false
+USA,USA,Americas,North America,false
+Mexico,MEX,Americas,North America,false
+Other Central & Sth.America,,Americas,Central & South America,true
+Barbados,BRB,Americas,Caribbean,false
+Jamaica,JAM,Americas,Caribbean,false
+Other Caribbean,,Americas,Caribbean,true
+Australia,AUS,Asia and the Pacific,Oceania,false
+New Zealand,NZL,Asia and the Pacific,Oceania,false
+Other countries,,Unallocated,Unallocated,true

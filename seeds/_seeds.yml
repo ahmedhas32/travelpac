@@ -1,0 +1,13 @@
+seeds:
+  - name: country_regions
+    columns:
+      - name: country
+        data_tests:
+          - unique
+          - not_null
+      - name: iso3           
+        data_tests:
+          - unique
+      - name: region        
+        data_tests:
+          - not_null
