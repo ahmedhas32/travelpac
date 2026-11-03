@@ -76,9 +76,6 @@ flowchart LR
 ```
 travelpac/
 ├── analyses/                 exploratory SQL (CAGR, spend decomposition, diaspora flows)
-├── macros/
-│   ├── drop_relation.sql     drops objects dbt leaves behind after renames
-│   └── export_model.sql      exports any model to CSV/Parquet via dbt's own connection
 ├── models/
 │   ├── staging/
 │   │   ├── _sources.yml
@@ -98,8 +95,6 @@ travelpac/
 │   └── country_regions.csv   62 Travelpac countries mapped to UN Tourism regions
 ├── scripts/
 │   ├── load_raw.py           Excel → raw.travelpac in DuckDB
-│   ├── export_marts.py       fct_/dim_/mart_ tables → Parquet for Power BI
-│   └── restructure_project.py
 ├── tests/                    singular tests (validity, reconciliation, outliers)
 ├── dbt_project.yml
 └── profiles.yml              DuckDB connection (no credentials)

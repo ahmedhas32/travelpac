@@ -3,3 +3,7 @@ dbt_internal_packages/
 logs/
 target/
 .env
+*.duckdb
+*.duckdb.wal
+.user.yml
+exports/
