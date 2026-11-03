@@ -1,1 +1,1 @@
-select year , country , mode , purpose , visits , nights , expend from {{source('travelpac', 'travelpac')}} where  ukos = 'Overseas residents'
+select year , quarter , country , mode , purpose , visits  , package, nights , expend , sample from {{source('travelpac', 'travelpac')}} where  ukos = 'Overseas residents'

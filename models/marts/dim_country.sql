@@ -1,1 +1,1 @@
-select country , region from {{ref('country_regions')}}
+select country , region ,  is_residual_group from {{ref('country_regions')}}

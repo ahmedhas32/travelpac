@@ -1,3 +1,3 @@
-select  year ,  mode , country , round(sum(visits) , 0)  as total_visits , round(sum(nights) , 0) as total_nights , sum(expend) as total_expand
+select  year ,  mode , country , purpose , round(sum(visits) , 0)  as total_visits , round(sum(nights) , 0) as total_nights , sum(expend) as total_expand
  from {{ref('stg_model__first')}}
- group by year ,  mode , country
+ group by year ,  mode , country , purpose

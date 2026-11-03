@@ -5,6 +5,12 @@ models:
       - name: year
         data_tests:
           - not_null
+      - name : country
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('country_regions')
+                field: country
   - name: stg_model__outbound
     description: Travelpac cleaned, one row per published cell including only UK residents
     columns:
