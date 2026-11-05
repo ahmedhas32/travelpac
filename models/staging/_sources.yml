@@ -9,4 +9,3 @@ sources:
             - accepted_values:
                 arguments:
                   values: ['UK residents', 'Overseas residents']
-      - name: travelpac_spain

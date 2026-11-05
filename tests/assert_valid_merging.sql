@@ -1,0 +1,1 @@
+select * from {{ref('marts_tourism_balance_per_country')}} where year is Null or country is null or mode is null or purpose is null or region is null 

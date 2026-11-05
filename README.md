@@ -136,7 +136,7 @@ dbt build
 | `not_null`, `accepted_values` | staging, seeds | Missing keys, unexpected labels, typos in hand-edited seeds |
 | `unique` on `country` | seed | Duplicate mapping rows that would silently double totals in joins |
 | `relationships` country → seed | staging | Countries in the data with no region mapping |
-| `unique_combination_of_columns` | joined marts | Fan-out: the join multiplying rows when grains do not match |
+| `assert_valid_merging` | joined marts | Fan-out: the join multiplying rows when grains do not match |
 | `assert_balance_reconciles` | singular | Totals after the inbound/outbound join must equal totals before it, catching both fan-out (too high) and dropped rows (too low) |
 | `assert_valid_year` | singular | Years outside the possible range |
 | `warn_spend_outliers` | singular, `severity: warn` | Cells whose spend per night is more than 5× or less than ⅕ of the median for the same country and purpose |
