@@ -204,7 +204,7 @@ and the insight marts rank markets by spend per night, which compares visitor va
 
 ## Roadmap
 
-- [ ] Consolidate staging into a single `stg_travelpac__visits` model and point all marts at `fct_travel`
+- [ ] Consolidate staging into a single `stg_model__first` model and point all marts at `mart_travel`
 - [ ] `mart_market_trends`: CAGR on three-year averages, visits added and share of growth
 - [ ] `mart_value_volume`: visits vs spend per night, pooled 2017–2019
 - [ ] Ramadan and Gulf seasonality: quarterly share of Gulf visitors as Ramadan moves from Q3 (2009–2011) to Q2 (2017–2019)
