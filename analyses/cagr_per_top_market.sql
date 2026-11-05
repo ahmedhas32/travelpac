@@ -1,7 +1,7 @@
-with top_10_growth as (select * from {{ref('marts_cagr_per_country')}} limit 5)
+with top_5_growth as (select * from {{ref('marts_cagr_per_country')}} order by cagr desc limit 5)
 
 
- , yearly_pov_top_growth as (select  year , country , purpose , sum(visits) as total_inbound_visits_yearly from {{ref('stg_model__first')}} where country in (select country from top_10_growth) 
+ , yearly_pov_top_growth as (select  year , country , purpose , sum(visits) as total_inbound_visits_yearly from {{ref('stg_model__first')}} where country in (select country from top_5_growth) 
  group by    year , country , purpose)
 
 , start_points as (select year , country , purpose ,total_inbound_visits_yearly , lag(total_inbound_visits_yearly , 10) over (partition by country , purpose order by year) as start_point_visits from yearly_pov_top_growth)
